@@ -3,7 +3,7 @@ import { Badge } from "~/components/badge";
 import { displayLgSemibold, textLgRegular } from "~/styles/components";
 import { tw } from "~/utils/tw";
 
-export const Section: FC = () => (
+export const ProcessSection: FC = () => (
   <section className="px-20 py-24 text-center">
     <Badge
       icon="/assets/images/icons/bubble-chat-question.svg"

@@ -1,5 +1,5 @@
 import type { FC } from "react";
-import { Section } from "~/components/section";
+import { ProcessSection } from "~/components/process-section";
 
-const HomePage: FC = () => <Section />;
+const HomePage: FC = () => <ProcessSection />;
 export default HomePage;
