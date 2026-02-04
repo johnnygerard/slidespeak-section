@@ -32,7 +32,13 @@ const steps: Array<{
 ];
 
 export const ProcessSection: FC = () => (
-  <section className="space-y-16 px-20 py-24 text-center">
+  <section
+    className={tw([
+      "space-y-10 text-center md:space-y-16",
+      "px-4 sm:px-8 md:px-20",
+      "py-12 md:py-24",
+    ])}
+  >
     <div className={sectionContainerStyles}>
       <Badge
         icon="/assets/images/icons/bubble-chat-question.svg"
@@ -48,7 +54,13 @@ export const ProcessSection: FC = () => (
         </p>
       </hgroup>
     </div>
-    <ol className={tw(sectionContainerStyles, "grid grid-cols-3 gap-6")}>
+    <ol
+      className={tw(
+        sectionContainerStyles,
+        "grid gap-6",
+        "grid-cols-1 md:grid-cols-2 lg:grid-cols-3",
+      )}
+    >
       {steps.map(({ content, title, description }, index) => (
         <li key={index}>
           <ProcessStep title={title} description={description}>
