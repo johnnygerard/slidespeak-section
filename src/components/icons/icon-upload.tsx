@@ -5,7 +5,7 @@ type Props = {
   className?: string;
 };
 
-export const UploadIcon: FC<Props> = ({ className }) => (
+export const IconUpload: FC<Props> = ({ className }) => (
   <div className={tw(["rounded-full bg-brand-600 p-2", className])}>
     {/* eslint-disable-next-line @next/next/no-img-element */}
     <img
