@@ -12,7 +12,7 @@ export const ProcessStep: FC<Props> = ({ children, title, description }) => (
   <>
     <div
       className={tw([
-        "grid h-58 place-items-center bg-[#F8F9FC] p-8",
+        "flex h-58 items-center bg-[#F8F9FC] p-8",
         "rounded-3xl border border-[#EAECF5]",
       ])}
     >

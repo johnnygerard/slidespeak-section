@@ -3,6 +3,7 @@ import { Badge } from "~/components/badge";
 import { displayLgSemibold, textLgRegular } from "~/styles/components";
 import { tw } from "~/utils/tw";
 import { ProcessStep } from "./process-step";
+import { ProcessStep1 } from "./process-step-1";
 
 const sectionContainerStyles = tw("mx-auto max-w-7xl px-8");
 
@@ -12,19 +13,19 @@ const steps: Array<{
   description: string;
 }> = [
   {
-    content: <div>Step 1</div>,
+    content: <ProcessStep1 />,
     title: "Upload PDF",
     description:
       "Select any PDF file from your device. Our AI supports large reports, research papers, and any PDF document, even scanned documents.",
   },
   {
-    content: <div>Step 2</div>,
+    content: <div className="w-full">Step 2</div>,
     title: "AI Summary & Insights",
     description:
       "Automatically extracts key points, takeaways, and insights from your PDF to create presentation-ready slides with a clear storyline.",
   },
   {
-    content: <div>Step 3</div>,
+    content: <div className="w-full">Step 3</div>,
     title: "Edit with AI",
     description:
       "Use our ChatGPT-powered AI to edit your PDF presentation. Need an additional slide or want to change the headline for a slide? No problem.",
