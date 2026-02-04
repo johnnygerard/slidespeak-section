@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
+import { Figtree } from "next/font/google";
 import type { FC, ReactNode } from "react";
 import "~/styles/globals.css";
 import { tw } from "~/utils/tw";
 
-const geistSans = Geist({
+const figtree = Figtree({
   display: "swap",
   subsets: ["latin"],
-  variable: "--font-geist-sans",
+  variable: "--font-figtree",
 });
 
 const APP_NAME = "Next.js 16 Starter";
@@ -42,11 +42,7 @@ type Props = {
 };
 
 const RootLayout: FC<Props> = ({ children }) => (
-  <html
-    className={geistSans.variable}
-    data-scroll-behavior="smooth"
-    lang="en-US"
-  >
+  <html className={figtree.variable} data-scroll-behavior="smooth" lang="en-US">
     <body
       className={tw([
         "bg-neutral-950 font-sans text-base text-neutral-100",

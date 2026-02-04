@@ -32,5 +32,5 @@
 /* `@theme inline` is required when referencing CSS custom properties */
 /* @see https://tailwindcss.com/docs/theme#referencing-other-variables */
 @theme inline {
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-figtree);
 }
