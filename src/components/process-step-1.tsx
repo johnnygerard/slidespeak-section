@@ -1,4 +1,5 @@
 import type { FC } from "react";
+import { IconPDF } from "~/components/icons/icon-pdf";
 import { IconUpload } from "~/components/icons/icon-upload";
 
 export const ProcessStep1: FC = () => (
@@ -15,5 +16,6 @@ export const ProcessStep1: FC = () => (
       />
     </svg>
     <IconUpload className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
+    <IconPDF className="absolute right-7 bottom-2" />
   </div>
 );
