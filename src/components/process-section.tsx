@@ -10,9 +10,9 @@ export const ProcessSection: FC = () => (
       label="How it works"
     />
     <hgroup className="mt-6 space-y-5">
-      <h1 className={tw(displayLgSemibold, "text-gray-900")}>
+      <h2 className={tw(displayLgSemibold, "text-gray-900")}>
         Create presentations in 3 Steps
-      </h1>
+      </h2>
       <p className={tw(textLgRegular, "text-gray-600")}>
         Lorem ipsum dolor sit amet consectetur. Et sollicitudin felis id
         maecenas id sed molestie.
