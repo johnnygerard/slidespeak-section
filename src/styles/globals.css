@@ -33,4 +33,8 @@
 /* @see https://tailwindcss.com/docs/theme#referencing-other-variables */
 @theme inline {
   --font-sans: var(--font-figtree);
+
+  /* SlideSpeak Design System */
+  --color-brand-600: #1570ef;
+  --color-brand-500: #2e90fa;
 }
