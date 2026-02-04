@@ -5,3 +5,4 @@ export const displayLgSemibold = tw([
 ]);
 
 export const textSmSemibold = tw(["text-sm/5 font-semibold"]);
+export const textLgRegular = tw(["text-lg/7 font-normal"]);
