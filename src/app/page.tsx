@@ -1,5 +1,5 @@
 import type { FC } from "react";
-import { Starter } from "~/components/starter";
+import { Section } from "~/components/section";
 
-const HomePage: FC = () => <Starter />;
+const HomePage: FC = () => <Section />;
 export default HomePage;
