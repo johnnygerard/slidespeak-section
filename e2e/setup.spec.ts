@@ -1,6 +1,6 @@
 import { expect, test } from "@playwright/test";
 
-test("homepage has an h1 element", async ({ page }) => {
+test("homepage has an h2 element", async ({ page }) => {
   await page.goto("/");
-  await expect(page.locator("h1")).toBeVisible();
+  await expect(page.locator("h2")).toBeVisible();
 });
