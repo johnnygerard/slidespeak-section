@@ -12,15 +12,15 @@ export const ProcessStep: FC<Props> = ({ children, title, description }) => (
   <>
     <div
       className={tw([
-        "flex h-58 items-center bg-[#F8F9FC] p-8",
-        "rounded-3xl border border-[#EAECF5]",
+        "flex h-58 items-center bg-gray-blue-50 p-8",
+        "rounded-3xl border border-gray-blue-100",
       ])}
     >
       {children}
     </div>
     <div className="mt-6 space-y-3 text-left">
-      <h3 className={tw(textXlSemibold, "text-[#181D27]")}>{title}</h3>
-      <p className={tw(textMdRegular, "text-[#535862]")}>{description}</p>
+      <h3 className={tw(textXlSemibold, "text-gray-900")}>{title}</h3>
+      <p className={tw(textMdRegular, "text-gray-600")}>{description}</p>
     </div>
   </>
 );
