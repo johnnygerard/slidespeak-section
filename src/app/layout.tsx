@@ -1,12 +1,20 @@
 import type { Metadata } from "next";
-import { Figtree } from "next/font/google";
+import { Cascadia_Code, Figtree } from "next/font/google";
 import type { FC, ReactNode } from "react";
 import "~/styles/globals.css";
+import { tw } from "~/utils/tw";
 
 const figtree = Figtree({
   display: "swap",
   subsets: ["latin"],
   variable: "--font-figtree",
+});
+
+const cascadiaCode = Cascadia_Code({
+  display: "swap",
+  fallback: ["Consolas", "Menlo", "Monaco", "Courier New", "monospace"],
+  subsets: ["latin"],
+  variable: "--font-cascadia-code",
 });
 
 const APP_NAME = "Next.js 16 Starter";
@@ -41,7 +49,11 @@ type Props = {
 };
 
 const RootLayout: FC<Props> = ({ children }) => (
-  <html className={figtree.variable} data-scroll-behavior="smooth" lang="en-US">
+  <html
+    className={tw([cascadiaCode.variable, figtree.variable])}
+    data-scroll-behavior="smooth"
+    lang="en-US"
+  >
     <body className="bg-white font-sans text-base">
       {/* This wrapper prevents a body overflow in mobile browsers. */}
       <div className="flex min-h-screen flex-col">
