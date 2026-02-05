@@ -17,19 +17,13 @@ const cascadiaCode = Cascadia_Code({
   variable: "--font-cascadia-code",
 });
 
-const APP_NAME = "Next.js 16 Starter";
-const TITLE = APP_NAME;
+const APP_NAME = "SlideSpeak";
+const TITLE = `Turn PDF into Presentation with AI | ${APP_NAME}`;
 const DESCRIPTION =
-  "A starter template for Next.js 16 with the latest features and best practices.";
+  "Instantly convert PDF files into structured, editable presentations with SlideSpeak AI. Automate your design workflow and eliminate manual copy-pasting. Try it for free.";
 
 export const metadata: Metadata = {
-  icons: (["light", "dark"] as const).map((theme) => ({
-    url: `/assets/images/favicon-${theme}.png`,
-    type: "image/png",
-    sizes: "32x32",
-    media: `(prefers-color-scheme: ${theme})`,
-  })),
-  metadataBase: new URL("https://starter-nextjs-16.vercel.app"),
+  metadataBase: new URL("https://slidespeak-section.vercel.app"),
   title: {
     template: `%s | ${APP_NAME}`,
     default: TITLE,
