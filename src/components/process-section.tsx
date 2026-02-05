@@ -1,10 +1,10 @@
 import type { FC, ReactNode } from "react";
 import { Badge } from "~/components/badge";
+import { ProcessStep } from "~/components/process-step";
+import { ProcessStep1 } from "~/components/process-step-1";
+import { ProcessStep2 } from "~/components/process-step-2";
 import { displayLgSemibold, textLgRegular } from "~/styles/components";
 import { tw } from "~/utils/tw";
-import { ProcessStep } from "./process-step";
-import { ProcessStep1 } from "./process-step-1";
-import { ProcessStep2 } from "./process-step-2";
 
 const sectionContainerStyles = tw("mx-auto max-w-7xl px-8");
 
