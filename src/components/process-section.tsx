@@ -4,6 +4,7 @@ import { displayLgSemibold, textLgRegular } from "~/styles/components";
 import { tw } from "~/utils/tw";
 import { ProcessStep } from "./process-step";
 import { ProcessStep1 } from "./process-step-1";
+import { ProcessStep2 } from "./process-step-2";
 
 const sectionContainerStyles = tw("mx-auto max-w-7xl px-8");
 
@@ -19,7 +20,7 @@ const steps: Array<{
       "Select any PDF file from your device. Our AI supports large reports, research papers, and any PDF document, even scanned documents.",
   },
   {
-    content: <div className="w-full">Step 2</div>,
+    content: <ProcessStep2 />,
     title: "AI Summary & Insights",
     description:
       "Automatically extracts key points, takeaways, and insights from your PDF to create presentation-ready slides with a clear storyline.",
