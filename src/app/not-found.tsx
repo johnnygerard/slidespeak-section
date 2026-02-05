@@ -1,34 +1,43 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import type { FC } from "react";
+import { Badge } from "~/components/badge";
+import { displayLgSemibold, textLgRegular } from "~/styles/components";
+import { tw } from "~/utils/tw";
 
 export const metadata: Metadata = {
   title: "Page Not Found",
 };
 
 const NotFound: FC = () => (
-  <div className="mx-auto w-full max-w-3xl px-6 py-16 text-center">
-    <hgroup>
-      <p className="text-xs tracking-[0.3em] text-neutral-400 uppercase">
-        404 Error
+  <section className={tw(["px-4 sm:px-8 md:px-20", "py-16 md:py-24"])}>
+    <div className="mx-auto w-full max-w-4xl text-center">
+      <div className="space-y-6">
+        <Badge label="404 Error" />
+        <h1 className={tw(displayLgSemibold, "text-gray-900")}>
+          Page Not Found
+        </h1>
+      </div>
+      <p className={tw(textLgRegular, "mt-4 text-gray-600")}>
+        Sorry, the page you are looking for does not exist or has been moved.
       </p>
-      <h1 className="mt-4 text-3xl leading-tight font-semibold text-balance sm:text-4xl">
-        Page Not Found
-      </h1>
-    </hgroup>
-    <p className="mt-2 text-base text-neutral-300">
-      Sorry, the page you are looking for does not exist or has been moved.
-    </p>
 
-    <div className="mt-10 flex items-center justify-center">
-      <Link
-        href="/"
-        className="inline-flex items-center gap-2 rounded-full border border-neutral-800 bg-neutral-900/70 px-5 py-2 text-sm font-semibold text-neutral-100 transition hover:border-neutral-700 hover:bg-neutral-900"
-      >
-        Back to Home
-      </Link>
+      <div className="mt-10 flex items-center justify-center">
+        <Link
+          href="/"
+          className={tw([
+            "inline-flex items-center gap-2",
+            "rounded-full border border-brand-600/20 bg-brand-600 px-6 py-3",
+            "text-sm font-semibold text-white shadow-sm",
+            "transition hover:-translate-y-0.5 hover:shadow-md",
+            "focus-visible:outline-brand-500",
+          ])}
+        >
+          Back to Home
+        </Link>
+      </div>
     </div>
-  </div>
+  </section>
 );
 
 export default NotFound;
