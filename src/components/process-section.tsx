@@ -3,6 +3,7 @@ import { Badge } from "~/components/badge";
 import { ProcessStep } from "~/components/process-step";
 import { ProcessStep1 } from "~/components/process-step-1";
 import { ProcessStep2 } from "~/components/process-step-2";
+import { ProcessStep3 } from "~/components/process-step-3";
 import { displayLgSemibold, textLgRegular } from "~/styles/components";
 import { tw } from "~/utils/tw";
 
@@ -26,7 +27,7 @@ const steps: Array<{
       "Automatically extracts key points, takeaways, and insights from your PDF to create presentation-ready slides with a clear storyline.",
   },
   {
-    content: <div className="w-full">Step 3</div>,
+    content: <ProcessStep3 />,
     title: "Edit with AI",
     description:
       "Use our ChatGPT-powered AI to edit your PDF presentation. Need an additional slide or want to change the headline for a slide? No problem.",
