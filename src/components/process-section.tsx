@@ -1,5 +1,6 @@
 import type { FC, ReactNode } from "react";
 import { Badge } from "~/components/badge";
+import { BubbleChatQuestionIcon } from "~/components/icons/bubble-chat-question";
 import { ProcessStep } from "~/components/process-step";
 import { ProcessStep1 } from "~/components/process-step-1";
 import { ProcessStep2 } from "~/components/process-step-2";
@@ -43,10 +44,7 @@ export const ProcessSection: FC = () => (
     ])}
   >
     <div className={sectionContainerStyles}>
-      <Badge
-        icon="/assets/images/icons/bubble-chat-question.svg"
-        label="How it works"
-      />
+      <Badge icon={BubbleChatQuestionIcon} label="How it works" />
       <hgroup className="mt-6 space-y-5">
         <h2 className={tw(displayLgSemibold, "text-gray-900")}>
           Create presentations in 3 Steps

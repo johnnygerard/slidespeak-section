@@ -1,21 +1,20 @@
-import type { FC } from "react";
+import type { ElementType, FC } from "react";
 import { textSmSemibold } from "~/styles/components";
 import { tw } from "~/utils/tw";
 
 type Props = {
-  icon?: string;
+  icon?: ElementType;
   label: string;
 };
 
-export const Badge: FC<Props> = ({ icon, label }) => (
+export const Badge: FC<Props> = ({ icon: Icon, label }) => (
   <div
     className={tw([
       "inline-flex items-center gap-2 px-3 py-2",
       "rounded-xl border border-brand-600 shadow-xs",
     ])}
   >
-    {/* eslint-disable-next-line @next/next/no-img-element */}
-    {icon && <img alt="" className="size-4" src={icon} />}
+    {Icon && <Icon className="size-4" />}
     <span
       className={tw(
         textSmSemibold,
