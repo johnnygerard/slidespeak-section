@@ -1,7 +1,9 @@
 import type { FC } from "react";
 import { BoldIcon } from "~/components/icons/bold";
+import { CursorArrowIcon } from "~/components/icons/cursor-arrow";
 import { DropdownIcon } from "~/components/icons/dropdown";
 import { EllipsisIcon } from "~/components/icons/ellipsis";
+import { StarsIcon } from "~/components/icons/stars";
 import { TextColorIcon } from "~/components/icons/text-color";
 import { TextFrame } from "~/components/text-frame";
 import { tw } from "~/utils/tw";
@@ -22,12 +24,7 @@ export const ProcessStep3: FC = () => (
     >
       {/* Button */}
       <div className="flex h-4.5 items-center gap-[0.21431rem] px-[0.28569rem]">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          alt=""
-          className="size-[0.57144rem]"
-          src="/assets/images/icons/stars.svg"
-        />
+        <StarsIcon className="size-[0.57144rem]" />
         <span
           className={tw(
             "text-[0.5rem]/[0.64288rem] font-semibold",
@@ -77,12 +74,7 @@ export const ProcessStep3: FC = () => (
     <div className="absolute left-1/2 mt-1.5 flex -translate-x-1/2 gap-4">
       <TextFrame />
       <TextFrame isEmpty={false} />
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        alt=""
-        className="absolute -bottom-2.5 left-1/2 w-10 translate-x-15.5"
-        src="/assets/images/icons/cursor-arrow.svg"
-      />
+      <CursorArrowIcon className="absolute -bottom-2.5 left-1/2 w-10 translate-x-15.5" />
       <TextFrame />
     </div>
   </div>
