@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import { Figtree } from "next/font/google";
+import { Cascadia_Code, Figtree } from "next/font/google";
 import type { FC, ReactNode } from "react";
 import "~/styles/globals.css";
+import { tw } from "~/utils/tw";
 
 const figtree = Figtree({
   display: "swap",
@@ -9,19 +10,20 @@ const figtree = Figtree({
   variable: "--font-figtree",
 });
 
-const APP_NAME = "Next.js 16 Starter";
-const TITLE = APP_NAME;
+const cascadiaCode = Cascadia_Code({
+  display: "swap",
+  fallback: ["Consolas", "Menlo", "Monaco", "Courier New", "monospace"],
+  subsets: ["latin"],
+  variable: "--font-cascadia-code",
+});
+
+const APP_NAME = "SlideSpeak";
+const TITLE = `Turn PDF into Presentation with AI | ${APP_NAME}`;
 const DESCRIPTION =
-  "A starter template for Next.js 16 with the latest features and best practices.";
+  "Instantly convert PDF files into structured, editable presentations with SlideSpeak AI. Automate your design workflow and eliminate manual copy-pasting. Try it for free.";
 
 export const metadata: Metadata = {
-  icons: (["light", "dark"] as const).map((theme) => ({
-    url: `/assets/images/favicon-${theme}.png`,
-    type: "image/png",
-    sizes: "32x32",
-    media: `(prefers-color-scheme: ${theme})`,
-  })),
-  metadataBase: new URL("https://starter-nextjs-16.vercel.app"),
+  metadataBase: new URL("https://slidespeak-section.vercel.app"),
   title: {
     template: `%s | ${APP_NAME}`,
     default: TITLE,
@@ -41,7 +43,11 @@ type Props = {
 };
 
 const RootLayout: FC<Props> = ({ children }) => (
-  <html className={figtree.variable} data-scroll-behavior="smooth" lang="en-US">
+  <html
+    className={tw([cascadiaCode.variable, figtree.variable])}
+    data-scroll-behavior="smooth"
+    lang="en-US"
+  >
     <body className="bg-white font-sans text-base">
       {/* This wrapper prevents a body overflow in mobile browsers. */}
       <div className="flex min-h-screen flex-col">
