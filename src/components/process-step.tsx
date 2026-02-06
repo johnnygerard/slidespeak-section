@@ -11,8 +11,9 @@ type Props = {
 export const ProcessStep: FC<Props> = ({ children, title, description }) => (
   <>
     <div
+      aria-hidden
       className={tw([
-        "flex h-58 items-center bg-gray-blue-50 p-8",
+        "flex h-58 items-center bg-gray-blue-50 p-8 select-none",
         "rounded-3xl border border-gray-blue-100",
       ])}
     >

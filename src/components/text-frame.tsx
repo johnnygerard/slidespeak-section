@@ -1,4 +1,4 @@
-import { type FC, type SVGProps } from "react";
+import { useId, type FC, type SVGProps } from "react";
 import { tw } from "~/utils/tw";
 
 type Props = SVGProps<SVGSVGElement> & {
@@ -12,6 +12,8 @@ export const TextFrame: FC<Props> = ({
   ...props
 }) => {
   const strokeColor = tw(isEmpty ? "stroke-gray-100" : "stroke-brand-600");
+  const filterId = useId();
+  const filterIds = Array.from({ length: 6 }, (_, i) => `${filterId}-${i}`);
 
   return (
     <svg
@@ -27,7 +29,7 @@ export const TextFrame: FC<Props> = ({
           fill="#101828"
         />
       )}
-      <g filter="url(#filter0_d_63_292)">
+      <g filter={`url(#${filterIds[0]})`}>
         <path
           d="M2 6C2 3.79086 3.79086 2 6 2C8.20914 2 10 3.79086 10 6C10 8.20914 8.20914 10 6 10C3.79086 10 2 8.20914 2 6Z"
           fill="white"
@@ -38,7 +40,7 @@ export const TextFrame: FC<Props> = ({
           strokeLinejoin="round"
         />
       </g>
-      <g filter="url(#filter1_d_63_292)">
+      <g filter={`url(#${filterIds[1]})`}>
         <path
           d="M151 6C151 3.79086 152.791 2 155 2C157.209 2 159 3.79086 159 6C159 8.20914 157.209 10 155 10C152.791 10 151 8.20914 151 6Z"
           fill="white"
@@ -49,7 +51,7 @@ export const TextFrame: FC<Props> = ({
           strokeLinejoin="round"
         />
       </g>
-      <g filter="url(#filter2_d_63_292)">
+      <g filter={`url(#${filterIds[2]})`}>
         <path
           d="M2 52C2 49.7909 3.79086 48 6 48C8.20914 48 10 49.7909 10 52C10 54.2091 8.20914 56 6 56C3.79086 56 2 54.2091 2 52Z"
           fill="white"
@@ -60,7 +62,7 @@ export const TextFrame: FC<Props> = ({
           strokeLinejoin="round"
         />
       </g>
-      <g filter="url(#filter3_d_63_292)">
+      <g filter={`url(#${filterIds[3]})`}>
         <path
           d="M151 52C151 49.7909 152.791 48 155 48C157.209 48 159 49.7909 159 52C159 54.2091 157.209 56 155 56C152.791 56 151 54.2091 151 52Z"
           fill="white"
@@ -71,7 +73,7 @@ export const TextFrame: FC<Props> = ({
           strokeLinejoin="round"
         />
       </g>
-      <g filter="url(#filter4_d_63_292)">
+      <g filter={`url(#${filterIds[4]})`}>
         <rect x="69" y="1" width="24" height="8" rx="4" fill="white" />
         <rect
           x="69.5"
@@ -83,7 +85,7 @@ export const TextFrame: FC<Props> = ({
           strokeLinejoin="round"
         />
       </g>
-      <g filter="url(#filter5_d_63_292)">
+      <g filter={`url(#${filterIds[5]})`}>
         <rect x="69" y="48" width="24" height="8" rx="4" fill="white" />
         <rect
           x="69.5"
@@ -97,7 +99,7 @@ export const TextFrame: FC<Props> = ({
       </g>
       <defs>
         <filter
-          id="filter0_d_63_292"
+          id={filterIds[0]}
           x="0"
           y="1"
           width="12"
@@ -131,7 +133,7 @@ export const TextFrame: FC<Props> = ({
           />
         </filter>
         <filter
-          id="filter1_d_63_292"
+          id={filterIds[1]}
           x="149"
           y="1"
           width="12"
@@ -165,7 +167,7 @@ export const TextFrame: FC<Props> = ({
           />
         </filter>
         <filter
-          id="filter2_d_63_292"
+          id={filterIds[2]}
           x="0"
           y="47"
           width="12"
@@ -199,7 +201,7 @@ export const TextFrame: FC<Props> = ({
           />
         </filter>
         <filter
-          id="filter3_d_63_292"
+          id={filterIds[3]}
           x="149"
           y="47"
           width="12"
@@ -233,7 +235,7 @@ export const TextFrame: FC<Props> = ({
           />
         </filter>
         <filter
-          id="filter4_d_63_292"
+          id={filterIds[4]}
           x="67"
           y="0"
           width="28"
@@ -267,7 +269,7 @@ export const TextFrame: FC<Props> = ({
           />
         </filter>
         <filter
-          id="filter5_d_63_292"
+          id={filterIds[5]}
           x="67"
           y="47"
           width="28"
