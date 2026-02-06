@@ -14,7 +14,7 @@ export const Badge: FC<Props> = ({ icon: Icon, label }) => (
       "rounded-xl border border-brand-600 shadow-xs",
     ])}
   >
-    {Icon && <Icon className="size-4" />}
+    {Icon && <Icon aria-hidden className="size-4" />}
     <span
       className={tw(
         textSmSemibold,
