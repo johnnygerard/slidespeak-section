@@ -42,7 +42,7 @@
     "node": "24",
     "npm": "11"
   },
-  "name": "starter-nextjs-16",
+  "name": "slidespeak-section",
   "private": true,
   "scripts": {
     "build": "next build",
