@@ -22,7 +22,7 @@ export const StarsIcon: FC<Props> = ({ ...props }) => (
         y2="0.761963"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stopColor="#1570EF" />
+        <stop offset="0" stopColor="#1570EF" />
         <stop offset="1" stopColor="#2E90FA" />
       </linearGradient>
       <clipPath id="clip0_63_303">

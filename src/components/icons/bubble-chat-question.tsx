@@ -34,7 +34,7 @@ export const BubbleChatQuestionIcon: FC<Props> = ({ ...props }) => (
         y2="1.33325"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stopColor="#1570EF" />
+        <stop offset="0" stopColor="#1570EF" />
         <stop offset="1" stopColor="#2E90FA" />
       </linearGradient>
       <linearGradient
@@ -45,7 +45,7 @@ export const BubbleChatQuestionIcon: FC<Props> = ({ ...props }) => (
         y2="5.33325"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stopColor="#1570EF" />
+        <stop offset="0" stopColor="#1570EF" />
         <stop offset="1" stopColor="#2E90FA" />
       </linearGradient>
       <linearGradient
@@ -56,7 +56,7 @@ export const BubbleChatQuestionIcon: FC<Props> = ({ ...props }) => (
         y2="11"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stopColor="#1570EF" />
+        <stop offset="0" stopColor="#1570EF" />
         <stop offset="1" stopColor="#2E90FA" />
       </linearGradient>
       <clipPath id="clip0_2_183">
