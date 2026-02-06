@@ -53,9 +53,9 @@ const Card: FC<{
       </div>
     ) : (
       <div className="space-y-1.5 overflow-hidden pe-3 text-left font-mono">
-        <h4 className="truncate text-[0.75rem]/[1] font-semibold -tracking-[0.0075rem] text-gray-900">
+        <p className="truncate text-[0.75rem]/[1] font-semibold -tracking-[0.0075rem] text-gray-900">
           {title}
-        </h4>
+        </p>
         <p className="truncate text-[0.625rem]/[1] -tracking-[0.00625rem] text-gray-400">
           {description}
         </p>
