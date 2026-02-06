@@ -2,6 +2,7 @@
 
 ![project status](https://img.shields.io/badge/project_status-active-success?style=for-the-badge)
 [![live site](https://img.shields.io/badge/live_site-blue?style=for-the-badge)](https://slidespeak-section.vercel.app/)
+[![Lighthouse report](https://img.shields.io/badge/lighthouse-F44B21?style=for-the-badge&logo=lighthouse&logoColor=fff)](https://googlechrome.github.io/lighthouse/viewer/?gist=db84d013681f5b216cfc0898db3da6b0)
 
 ## Overview
 
